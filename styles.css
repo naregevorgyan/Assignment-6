@@ -4,6 +4,10 @@ body, h1, h2, p {
     padding: 0;
 }
 
+h2 {
+    padding-top: 30px;
+}
+
 /* Set a fixed width for the body */
 body {
     width: 1366px;
