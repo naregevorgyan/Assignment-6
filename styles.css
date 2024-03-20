@@ -89,9 +89,6 @@ footer {
     flex-grow: 1;
 }
 
-#margin{
-    padding-top: 30px;
-}
 
 .middle {
     padding: 20px;
@@ -107,6 +104,7 @@ footer {
 }
 #margin{
     margin-bottom: 20px;
+    padding-top: 30px;
 }
 
 #about .round-images {
@@ -134,7 +132,6 @@ footer {
 
 
 
-/* Base gallery item styling */
 .gallery-img {
     margin: 10px;
     overflow: hidden; 
