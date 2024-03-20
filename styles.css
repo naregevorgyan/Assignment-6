@@ -1,0 +1,197 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a fixed width for the body */
+body {
+    width: 1366px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#home {
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 20px 0px 20px;
+}
+
+#home h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Control the space between items */
+}
+
+#about {
+    background-color: #f0f0f0;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.gallery-item {
+    flex-basis: calc(33.333% - 20px); /* Three items per row, accounting for the gap */
+    margin-bottom: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    padding: 10px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.col{
+    padding: 10px 0%;
+    margin: 50px 0% 50px;
+    flex-grow: 1;
+}
+
+.middle {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#about {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+#margin{
+    margin-bottom: 20px;
+}
+
+#about .round-images {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds space between the circular images */
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.round-image {
+    /* width: 130px; 
+    height: 130px;  */
+    /* background-color: #ccc;  */
+    border-radius: 50%; 
+    /* background-size: cover;
+    background-position: center; */
+}
+
+#lineHeight{
+    line-height: 30px;
+}
+
+
+
+/* Base gallery item styling */
+.gallery-img {
+    margin: 10px;
+    overflow: hidden; /* This is needed to maintain the border radius on hover */
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+/* Regular gallery with 3 columns */
+#regular-gallery .gallery-row {
+    display: flex;
+    justify-content: space-between; 
+}
+
+#regular-gallery .gallery-img {
+    flex-basis: calc(33.333% - 20px);
+}
+
+#regular-gallery .gallery-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Round image gallery with 4 columns */
+#round-gallery .gallery-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#round-gallery .gallery-img {
+    flex-basis: calc(25% - 20px); /* Adjust space for margins */
+}
+
+#round-gallery .gallery-img.round img {
+    border-radius: 10%; /* Makes the image round */
+}
+
+/* Hover effect */
+.gallery-img:hover {
+    transform: scale(1.05); /* Makes the image a little bigger on hover */
+}
+
+.round-hover:hover {
+    transform: scale(1.05); /* Makes the image a little bigger on hover */
+    transition: transform 0.3s ease;
+}
+
+
+/* Responsive adjustments */
+/* @media (max-width: 768px) {
+    #regular-gallery .gallery-row,
+    #round-gallery .gallery-row {
+        flex-direction: column;
+    }
+
+    #regular-gallery .gallery-item,
+    #round-gallery .gallery-item {
+        flex-basis: auto; */
+        /* width: 100%; Full width for smaller screens */
+    /* }
+} */
+
+/* Add your color theme and other styles as needed */
