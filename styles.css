@@ -1,4 +1,3 @@
-/* Reset some default styles */
 body, h1, h2, p {
     margin: 0;
     padding: 0;
@@ -8,7 +7,7 @@ h2 {
     padding-top: 30px;
 }
 
-/* Set a fixed width for the body */
+
 body {
     width: 1366px;
     margin: 0 auto;
@@ -54,7 +53,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px; /* Control the space between items */
+    gap: 20px; 
 }
 
 #about {
@@ -69,7 +68,7 @@ footer {
 }
 
 .gallery-item {
-    flex-basis: calc(33.333% - 20px); /* Three items per row, accounting for the gap */
+    flex-basis: calc(33.333% - 20px); 
     margin-bottom: 20px;
     background-color: #fff;
     text-align: center;
@@ -114,7 +113,7 @@ footer {
 #about .round-images {
     display: flex;
     align-items: center;
-    gap: 20px; /* Adds space between the circular images */
+    gap: 20px; 
     padding: 20px 0;
     display: flex;
     flex-direction: row;
@@ -139,11 +138,11 @@ footer {
 /* Base gallery item styling */
 .gallery-img {
     margin: 10px;
-    overflow: hidden; /* This is needed to maintain the border radius on hover */
-    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
 }
 
-/* Regular gallery with 3 columns */
+
 #regular-gallery .gallery-row {
     display: flex;
     justify-content: space-between; 
@@ -159,43 +158,26 @@ footer {
     display: block;
 }
 
-/* Round image gallery with 4 columns */
+
 #round-gallery .gallery-row {
     display: flex;
     justify-content: space-between;
 }
 
 #round-gallery .gallery-img {
-    flex-basis: calc(25% - 20px); /* Adjust space for margins */
+    flex-basis: calc(25% - 20px); 
 }
 
 #round-gallery .gallery-img.round img {
-    border-radius: 10%; /* Makes the image round */
+    border-radius: 10%;
 }
 
-/* Hover effect */
+
 .gallery-img:hover {
-    transform: scale(1.05); /* Makes the image a little bigger on hover */
-}
+    transform: scale(1.05);
 
 .round-hover:hover {
-    transform: scale(1.05); /* Makes the image a little bigger on hover */
+    transform: scale(1.05);
     transition: transform 0.3s ease;
 }
 
-
-/* Responsive adjustments */
-/* @media (max-width: 768px) {
-    #regular-gallery .gallery-row,
-    #round-gallery .gallery-row {
-        flex-direction: column;
-    }
-
-    #regular-gallery .gallery-item,
-    #round-gallery .gallery-item {
-        flex-basis: auto; */
-        /* width: 100%; Full width for smaller screens */
-    /* }
-} */
-
-/* Add your color theme and other styles as needed */
